@@ -1,4 +1,5 @@
 sentence-transformers
+transformers
 langchain
 flask
 pypdf
