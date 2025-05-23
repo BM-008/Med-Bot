@@ -48,9 +48,8 @@ if st.button("Ask"):
         response = rag_chain.invoke({"input": user_input})
         answer = response["answer"]
         st.session_state.chat_history.append(("Bot", answer))
-        st.snow()
 
-for sender, message in st.session_state.chat_history:
+for sender, message in reversed(st.session_state.chat_history):
     if sender == "You":
         st.markdown(f"**{sender}:** {message}")
     else:
