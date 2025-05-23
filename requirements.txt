@@ -4,7 +4,7 @@ langchain
 flask
 pypdf
 python-dotenv
-pinecone-client
+pinecone
 langchain-pinecone
 langchain_community
 langchain_groq
