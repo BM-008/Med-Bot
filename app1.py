@@ -25,7 +25,7 @@ docsearch = PineconeVectorStore.from_existing_index(
 )
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
-llm = ChatGroq(temperature=0.2, model_name="deepseek-r1-distill-llama-70b")
+llm = ChatGroq(temperature=0.2, model_name="llama3-8b-8192")
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
     ("human", "{input}")
